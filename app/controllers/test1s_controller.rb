@@ -3,8 +3,8 @@ class Test1sController < ApplicationController
   active_scaffold :test1 do |conf|
     conf.label = "Test people list"
     conf.columns = [:name,:name2, :dt, :user,:created_at,:updated_at]
-    update.columns.exclude :user
-    create.columns.exclude :user
+    update.columns.exclude :user,:name2
+    create.columns.exclude :user,:name2
     list.sorting = {:name => 'ASC'}
     columns[:name].label = "Имя :-))"
     columns[:name2].label = "Виртуальное поле имени :-))"

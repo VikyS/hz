@@ -1,4 +1,6 @@
 Hz::Application.routes.draw do
+  resources :admins do as_routes end
+
   resources :test1s do as_routes end
 
   # The priority is based upon order of creation:

@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'active_scaffold'
 gem 'execjs'
 gem 'russian'
-#gem 'therubyracer'
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
